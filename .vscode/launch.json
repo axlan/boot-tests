@@ -8,8 +8,8 @@
             "name": "Debug",
             "type": "gdb",
             "request": "launch",
-            "target": "bios_hello_world.elf",
-            "debugger_args": ["-quiet", "-nh", "-x", "vscode.gdb"],
+            "target": "c_test/boot.elf",
+            "debugger_args": ["-quiet", "-nh", "-x", "c_test/vscode.gdb"],
             "cwd": "${workspaceRoot}",
             "valuesFormatting": "parseText"
         }
