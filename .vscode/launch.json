@@ -5,11 +5,20 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Debug",
+            "name": "Debug Boot",
             "type": "gdb",
             "request": "launch",
             "target": "c_test/boot.elf",
             "debugger_args": ["-quiet", "-nh", "-x", "c_test/vscode.gdb"],
+            "cwd": "${workspaceRoot}",
+            "valuesFormatting": "parseText"
+        },
+        {
+            "name": "Debug Chainloader",
+            "type": "gdb",
+            "request": "launch",
+            "target": "chain_loader/chain_boot.elf",
+            "debugger_args": ["-quiet", "-nh", "-x", "chain_loader/vscode.gdb"],
             "cwd": "${workspaceRoot}",
             "valuesFormatting": "parseText"
         }
